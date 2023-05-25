@@ -1,9 +1,15 @@
 # firstApp
  it is for learning purpose of daily basis
 # What is JSX
-JSX stands for Javascript XML and it is a very useful tool for React developers. JSX is an extension of the JavaScript language which provides a way to structure component rendering using syntax similar to HTML. JSX gives us the ability to write HTML elements in Javascript and place them in the DOM by converting the HTML tags into React elements without the need for other methods like createElement() or appendChild(). This combination of Javascript and HTML leads to having more powerful applications with boosted performance.
+What is jsx
 
-#How react work under hood
+Jsx stands for javascript XML. Jsx allows to html in react. Jsx easier to write code at html in react.
+Your  component also can't return multiple element.
+<fragment />
+< />
+<div />
+
+# How react work under hood
 react maintained a trees as like html. The html has the dom is like a node then it reflect in screen by using react its create virtual dom it does not affect the screen cause it take a snapshort of virtual dom and then it compare with the actual dom the only updated content will reflect.
 
 #What is package.json
