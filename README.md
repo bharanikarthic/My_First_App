@@ -14,7 +14,7 @@ react maintained a trees as like html. The html has the dom is like a node then 
 
 # What is package.json
 
-The package. json file contains descriptive and functional metadata about a project, such as a name, version, and dependencies. The file provides the npm package manager with various information to help identify the project and handle dependencies
+The file package.json is an essential part of a Node.js project. It serves multiple purposes and provides important information and functionality. Here are some reasons why we need a package.json file.
 
 # Project info
 
@@ -51,26 +51,29 @@ in react the ui is built using comp.comp are in a tree like struct where each co
 
 # Entry point
 
-index.js this file serves as the starting point of the app and is res for rendering the top lvl comp into dom. when the app is loaded the entry point calls the reactdom.render() fun passing the top lvl comp and target dom element where the app should be rendered
+index.js this file serves as the starting point of the app and is res for rendering the top level component into dom. When the app is loaded the entry point calls the reactdom.render() fun passing the top level component and target dom element where the app should be rendered
 
 # Key folder and files created by react app
 
 # src/folder for your app code
 
-index.js is for rendering the root comp and mount it into the dom app.js these files contains comp index.css is for styling purpose.
+index.js is for rendering the root component and mount it into the dom app.js these files contains component index.css is for styling purpose.
 
 # public/
 
-index.html is the main file loaded by browser.
+index.html is loaded in the dom.Then display the structured.
 
 # node modules/
 
-this folder iscreated by npm depends on dependencies
+when you install dependencies using a package manager like npm or Yarn
 
 # package.json
 
-holds the metadata and dependencies
+Node.js projects as it helps manage dependencies, track versions, define scripts, provide metadata, and facilitate project initialization. It simplifies the development workflow, promotes collaboration, and ensures consistent environments for different users working on the same project.
 
 # npm install
 
-run npm i it triggers a series of steps to install the project dependencies specified in the package.json file 1.read package json file to determine the dependencies 2.resolve dependency tree 3.fetch package from npm registry 4.extract the fetched package and install it in node-modules folder
+ First, npm install checks the package.json file in the current directory to determine the dependencies required for the project.
+ It checks the versions and dependencies of the installed packages to ensure they meet the requirements specified in package.json.
+Once the dependencies are resolved, npm install proceeds to download the packages from the npm registry and store them in the node_modules directory in the root of the project.
+ If a package-lock.json file exists (which is automatically generated when dependencies are installed or updated).
